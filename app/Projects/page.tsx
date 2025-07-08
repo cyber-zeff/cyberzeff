@@ -6,7 +6,7 @@ import { SiHackerone, SiBugcrowd } from 'react-icons/si';
 
 // Type definitions
 type ProjectLink = {
-  type: 'github' | 'demo' | 'live' | 'report' | 'hackerone' | 'bugcrowd';
+  type: 'github' | 'demo' | 'report' | 'hackerone' | 'bugcrowd';
   url: string;
 };
 
@@ -67,35 +67,66 @@ const ProjectsPage: React.FC = () => {
     webdev_ai: [
       {
         id: 4,
-        title: "AI Content Generator",
-        description: "Next.js application with OpenAI integration for content creation",
+        title: "AURA AI",
+        description: "An AI educator chatbot for Students of O'levels and A'levels (subj: Phy, Chem, Maths).",
         category: "Startup",
         links: [
-          { type: "github", url: "https://github.com/yourusername/ai-content-gen" },
-          { type: "demo", url: "https://ai-content.example.com" }
+          { type: "github", url: "https://github.com/cyber-zeff/AURA-AI-Chatbot" },
         ],
-        tags: ["Next.js", "OpenAI", "TailwindCSS"]
+        tags: ["Python", "Uvicorn", "Gemini API", "Agentic AI"]
       },
       {
         id: 5,
-        title: "E-commerce Platform",
-        description: "Full-stack e-commerce solution with React and Node.js",
+        title: "Vehiclez",
+        description: "A vehicles website made for a client as a business website.",
         category: "Contract Work",
         links: [
-          { type: "github", url: "https://github.com/yourusername/ecommerce-platform" },
-          { type: "live", url: "https://store.example.com" }
+          { type: "github", url: "https://github.com/cyber-zeff/Vehicle-Website-Vehiclez-" }
         ],
-        tags: ["React", "Node.js", "MongoDB"]
+        tags: ["PHP", "Bootstrap", "Ajax", "MySQL", "Swiper.js"]
       },
       {
         id: 6,
-        title: "Computer Vision API",
-        description: "Flask-based API for image recognition tasks",
+        title: "Highway Dash Game",
+        description: "A game me and my team made as a semester end project (sem 2).",
         category: "Personal Project",
         links: [
-          { type: "github", url: "https://github.com/yourusername/cv-api" }
+          { type: "github", url: "https://github.com/cyber-zeff/Highway-Dash-Game" },
+          { type: "report", url: "https://github.com/cyber-zeff/Highway-Dash-Game/blob/main/OOP%20Project%20Report%20-%20Highway%20Dash%20Game.pdf" },
         ],
-        tags: ["Python", "OpenCV", "Flask"]
+        tags: ["C++", "SFML"]
+      },
+      {
+        id: 7,
+        title: "FastHub",
+        description: "A Student Management Portal made as a semester end project (sem 1).",
+        category: "Personal Project",
+        links: [
+          { type: "github", url: "https://github.com/cyber-zeff/FASTHUB" }
+        ],
+        tags: ["C"]
+      },
+      {
+        id: 8,
+        title: "Blog Website",
+        description: "This is a fully functioning blog website with comments feature.",
+        category: "Side Project",
+        links: [
+          { type: "github", url: "https://github.com/cyber-zeff/Blog-Website" },
+          { type: "demo", url: "https://hux-blog-website.vercel.app/" }
+        ],
+        tags: ["Next.js", "Tailwind CSS"]
+      },
+      {
+        id: 9,
+        title: "Ecommerce Website",
+        description: "This is a dynamic ecommerce site with dynamic products and add to cart functionalities.",
+        category: "Side Project",
+        links: [
+          { type: "github", url: "https://github.com/cyber-zeff/Ecommerce-Website" },
+          { type: "demo", url: "https://hux-ecommerce-website.vercel.app/" }
+        ],
+        tags: ["Next.js", "Tailwind CSS"]
       },
       // ... other webdev+AI projects
     ]
@@ -161,7 +192,8 @@ const ProjectsPage: React.FC = () => {
                     {link.type === 'github' ? 'Code' : 
                      link.type === 'demo' ? 'Demo' :
                      link.type === 'hackerone' ? 'HackerOne' :
-                     link.type === 'bugcrowd' ? 'Bugcrowd' : 'View'}
+                     link.type === 'bugcrowd' ? 'Bugcrowd' :
+                     link.type === 'report' ? 'Report' : 'View'}
                   </a>
                 ))}
               </div>
