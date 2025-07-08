@@ -102,7 +102,8 @@ const ProjectsPage: React.FC = () => {
         description: "A Student Management Portal made as a semester end project (sem 1).",
         category: "Personal Project",
         links: [
-          { type: "github", url: "https://github.com/cyber-zeff/FASTHUB" }
+          { type: "github", url: "https://github.com/cyber-zeff/FASTHUB" },
+          { type: "report", url: "https://github.com/cyber-zeff/FASTHUB/blob/main/FastHub_Project_Report.pdf" }
         ],
         tags: ["C"]
       },
