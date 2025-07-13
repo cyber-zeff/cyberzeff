@@ -32,36 +32,36 @@ const ProjectsPage: React.FC = () => {
     cybersecurity: [
       {
         id: 1,
-        title: "Vulnerability Scanner",
-        description: "Automated web vulnerability scanner with AI-powered analysis",
+        title: "Password Strength Meter",
+        description: "A basic tool that rates password strength based on hacking difficulty.",
         category: "Personal Project",
         links: [
-          { type: "github", url: "https://github.com/yourusername/vuln-scanner" },
-          { type: "demo", url: "https://demo.example.com" }
+          { type: "github", url: "https://github.com/cyber-zeff/Python-Class-Projects/tree/main/2_Password_Strength_Meter" },
+          { type: "demo", url: "https://hux-password-strength-meter.streamlit.app/" }
         ],
-        tags: ["Python", "AI", "Security"]
+        tags: ["Python", "Streamlit", "AI", "Security"]
       },
-      {
-        id: 2,
-        title: "Enterprise Security Audit",
-        description: "Comprehensive security assessment for Fortune 500 client",
-        category: "Contract Work",
-        links: [
-          { type: "report", url: "https://example.com/report" }
-        ],
-        tags: ["Penetration Testing", "Compliance"]
-      },
-      {
-        id: 3,
-        title: "Bug Bounty Findings",
-        description: "Collection of critical vulnerabilities discovered in bug bounty programs",
-        category: "Side Project",
-        links: [
-          { type: "hackerone", url: "https://hackerone.com/yourprofile" },
-          { type: "bugcrowd", url: "https://bugcrowd.com/yourprofile" }
-        ],
-        tags: ["XSS", "SQLi", "RCE"]
-      },
+      // {
+      //   id: 2,
+      //   title: "Enterprise Security Audit",
+      //   description: "Comprehensive security assessment for Fortune 500 client",
+      //   category: "Contract Work",
+      //   links: [
+      //     { type: "report", url: "https://example.com/report" }
+      //   ],
+      //   tags: ["Penetration Testing", "Compliance"]
+      // },
+      // {
+      //   id: 3,
+      //   title: "Bug Bounty Findings",
+      //   description: "Collection of critical vulnerabilities discovered in bug bounty programs",
+      //   category: "Side Project",
+      //   links: [
+      //     { type: "hackerone", url: "https://hackerone.com/yourprofile" },
+      //     { type: "bugcrowd", url: "https://bugcrowd.com/yourprofile" }
+      //   ],
+      //   tags: ["XSS", "SQLi", "RCE"]
+      // },
       // ... other cybersecurity projects
     ],
     webdev_ai: [

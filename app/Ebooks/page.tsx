@@ -15,12 +15,12 @@ interface Ebook {
 
 const EbooksPage: React.FC = () => {
   const starterEbook = {
-    title: "Kickstart Cybersecurity",
-    description: "A free beginner-friendly ebook that introduces you to the world of cybersecurity. Learn about ethical hacking, securing your devices, and more.",
-    author: "Muhammad Huzaifa",
-    price: "Free",
-    imageUrl: "/ebooks/starter.jpg",
-    downloadUrl: "#"
+    title: "Releasing Soon...",
+    // description: "A free beginner-friendly ebook that introduces you to the world of cybersecurity. Learn about ethical hacking, securing your devices, and more.",
+    // author: "Muhammad Huzaifa",
+    // price: "Free",
+    // imageUrl: "/ebooks/starter.jpg",
+    // downloadUrl: "#"
   };
 
   const ebooks: Ebook[] = [
@@ -48,14 +48,14 @@ const EbooksPage: React.FC = () => {
         {/* Starter Ebook Section */}
         <section className="mb-20 mt-10">
           <div className="bg-[#1a1a1a] border border-[#76925a]/40 rounded-xl flex flex-col md:flex-row overflow-hidden shadow-lg">
-            <img 
+            {/* <img 
               src={starterEbook.imageUrl} 
               alt={starterEbook.title} 
               className="w-full md:w-1/3 object-cover h-72 md:h-auto"
-            />
+            /> */}
             <div className="p-6 flex flex-col justify-center md:w-2/3">
               <h2 className="text-3xl font-bold text-white mb-2">{starterEbook.title}</h2>
-              <p className="text-sm text-gray-300 mb-2 flex items-center">
+              {/* <p className="text-sm text-gray-300 mb-2 flex items-center">
                 <FiUser className="mr-1" /> {starterEbook.author}
               </p>
               <p className="text-gray-400 mb-4">{starterEbook.description}</p>
@@ -64,7 +64,7 @@ const EbooksPage: React.FC = () => {
                 className="inline-flex items-center px-4 py-2 bg-[#76925a] text-black font-semibold rounded hover:bg-[#9acd32] transition-colors w-fit"
               >
                 <FiDownload className="mr-2" /> Download for Free
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
